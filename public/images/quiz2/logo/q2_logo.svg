@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.016" height="67.016" viewBox="0 0 67.016 67.016">
+  <defs>
+    <filter id="Ellipse_60" x="0" y="0" width="67.016" height="67.016" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#767676" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_20255" data-name="Group 20255" transform="translate(-1187 -167)">
+    <g id="Group_20420" data-name="Group 20420">
+      <g transform="matrix(1, 0, 0, 1, 1187, 167)" filter="url(#Ellipse_60)">
+        <circle id="Ellipse_60-2" data-name="Ellipse 60" cx="27.508" cy="27.508" r="27.508" transform="translate(6 4)" fill="#fff"/>
+      </g>
+      <g id="Group_20419" data-name="Group 20419" transform="translate(3.077 -0.142)">
+        <rect id="Rectangle_15598" data-name="Rectangle 15598" width="30.941" height="3.438" rx="1.719" transform="translate(1207.354 186.142) rotate(45)" fill="#5a6688"/>
+        <rect id="Rectangle_15600" data-name="Rectangle 15600" width="30.941" height="3.438" rx="1.719" transform="translate(1204.923 208.1) rotate(-45)" fill="#5a6688"/>
+      </g>
+    </g>
+  </g>
+</svg>

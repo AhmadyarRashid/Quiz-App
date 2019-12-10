@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,700");
+
+$primaryColor: #1b324b;
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+.c-splashscreen {
+  max-width: 1170px;
+  height: 620px;
+  margin: 2rem auto;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  overflow: auto;
+  justify-content: space-between;
+  position: relative;
+
+  &__intro {
+    width: 50%;
+    float: left;
+    background-color: #ff4d4f;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    padding: 2rem;
+    &::before {
+      content: "";
+      background-image: url("./assets/img/bg.svg");
+      opacity: 0.45;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  h1 {
+    display: block;
+    z-index: 1;
+    position: relative;
+    font-family: "Alata", cursive;
+    color: white;
+    font-size: 54px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 30px;
+    width: 80%;
+    color: white;
+  }
+}
+
+.c-option {
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  background: #ed4c67;
+  padding: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  margin: 0 0 2rem 0;
+  transition: 0.2s ease all;
+
+  &:hover {
+    background: #ef99a7;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 2rem 0 0 0;
+  }
+
+  button {
+    background: #6c5ce7;
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    display: block;
+    margin: 2rem 0 0 0;
+    font-size: 25px;
+    border: 3px solid #6c5ce7;
+    cursor: pointer;
+
+    &:hover {
+      background: #fff;
+      color: #6c5ce7;
+    }
+  }
+}
+
+.c-options {
+  width: 50%;
+  float: left;
+  padding: 2rem;
+  p {
+    color: #ff4d4f;
+  }
+}
+
+.c-quiz-screen {
+  width: 1170px;
+  max-height: 737px;
+  margin: 2rem auto;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  position: relative;
+
+  &__intro {
+    width: 50%;
+    float: left;
+    // background-color: #ff4d4f;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 18px;
+    padding-left: 19px;
+    padding-bottom: 31px;
+
+    h1 {
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-align: center;
+      color: #1b324b;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    span {
+      margin-right: left;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  &__options {
+    width: 50%;
+    float: left;
+    max-width: 450px;
+    p {
+      color: #ff4d4f;
+    }
+  }
+}
+
+.c-quiz-section {
+  width: 100%;
+
+  h2 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    margin-top: 0px;
+    color: $primaryColor;
+  }
+}
+
+/* Below is rushed stuff to get it going */
+
+.number {
+  color: #b4a686;
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.explain {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: $primaryColor;
+  font-weight: 400;
+}
+
+.explain2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #b4a686;
+  display: block;
+  margin-top: 30px;
+  font-weight: 800;
+}
+
+.explain3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #b4a686;
+  font-weight: 800;
+}
+
+.explain4{
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #b4a686;
+  display: block;
+  font-weight: 400;
+}
+
+.hero {
+  width: auto;
+  height: 623px;
+}
+
+.heroOverrideClass {
+  // opacity: 0.5;
+ }
+
+.logo {
+  padding-right: 12px;
+}
+
+.close {
+  padding-right: 17px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.next,
+.back,
+.end {
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 10px;
+
+  width: 172px;
+  height: 62px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.quiz1 {
+  .next,
+  .back,
+  .end {
+    border: 1px solid #5a6688;
+    background-color: #5a6688;
+  }
+  .answerLetter{
+color:#5a6688;
+  }
+}
+
+.quiz2 {
+  .next,
+  .back,
+  .end {
+    border: 1px solid #a5cab0;
+    background-color: #a5cab0;
+  }
+  .answerLetter{
+    color:#a5cab0;
+      }
+}
+
+.answerLetter{
+font-size: 36px !important; 
+border-right: 1px solid #B4A686;
+display: inline;
+padding: 15px;
+padding-right: 20px;
+width: 60px;
+margin-right:15px;
+}
+
+.ck-button {
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #b4a686;
+  overflow: hidden;
+  float: left;
+  width: 450px;
+}
+
+.ck-button:hover {
+  margin: 4px;
+ // background-color: #d8d5cd;
+  border-radius: 4px;
+  box-shadow: 2px 2px #d8d5cd;
+  overflow: hidden;
+  float: left;
+  width: 450px;
+}
+
+.ck-button label {
+  float: left;
+  width: 450px;
+}
+
+.ck-button label span {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: $primaryColor;
+  font-weight: 500;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.ck-button label input {
+  position: absolute;
+  top: -20px;
+}
+
+.ck-button input:checked + span {
+  background-color: #d8d5cd;
+  width: 100%;
+}
